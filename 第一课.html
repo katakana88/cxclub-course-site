@@ -1647,4 +1647,13 @@ b）程序化的思维意识惯性导致。</div><button class="hw-more" onclick
 意识宽度：意识频谱的深、广、精细、全向、丰富度/多样度
 意识窄度：意识频谱的浅、狭窄、粗糙、单向、单调度</div><button class="hw-more" onclick="hwTog(this)">展开 ▾</button></div></section><script>
 function hwTog(b){var a=b.previousElementSibling;var c=a.classList.toggle('clamp');b.textContent=c?'展开 ▾':'收起 ▴';}
-</script><nav class="lnav"><span class="nav-off">← 上一课</span><a class="nav-home" href="index.html">🏠 首页</a><a href="第二课.html">下一课 →</a></nav></body></html>
+</script><nav class="lnav"><span class="nav-off">← 上一课</span><a class="nav-home" href="index.html">🏠 首页</a><a href="第二课.html">下一课 →</a></nav><script>
+document.querySelectorAll('video').forEach(function(v){
+  v.muted=true;v.playsInline=true;v.setAttribute('playsinline','');
+  if('IntersectionObserver' in window){
+    new IntersectionObserver(function(es){es.forEach(function(e){
+      if(e.isIntersecting){var p=e.target.play();if(p)p.catch(function(){});}else{e.target.pause();}
+    });},{threshold:0.15}).observe(v);
+  }else{var p=v.play();if(p)p.catch(function(){});}
+});
+</script></body></html>
