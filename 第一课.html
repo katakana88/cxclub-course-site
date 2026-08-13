@@ -1,4 +1,4 @@
-<!doctype html><html lang="zh"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>催醒游戏俱乐部 · 第一课</title>
+<!doctype html><html lang="zh"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>催醒游戏俱乐部 第一课</title>
 <style>
 :root{--aw:#2e7d32;--awbg:#e8f5e9;--bd:#e0e0e0;--fg:#1a1a1a;--mut:#888}
 *{box-sizing:border-box}
@@ -25,9 +25,10 @@ header h1{margin:0 0 6px;font-size:22px}header .sub{color:var(--mut);font-size:1
  padding:3px 13px;border-radius:12px;cursor:pointer}
 .jl-toggle:hover{background:#e8dcb0}
 .qpic{max-width:150px;max-height:190px;border-radius:5px;margin-top:4px;display:block}
+.emoji{width:1.3em;height:1.3em;vertical-align:-0.25em;display:inline-block;margin:0}
 img.pic,img.qpic{cursor:zoom-in}
-#lb{display:none;position:fixed;inset:0;background:rgba(0,0,0,.86);z-index:9999;cursor:zoom-out}
-#lb img{position:absolute;inset:0;margin:auto;max-width:96%;max-height:96%}
+#lb{display:none;position:fixed;inset:0;background:rgba(0,0,0,.86);z-index:9999;cursor:zoom-out;overflow:auto;text-align:center}
+#lb img{display:inline-block;margin:2vh auto;max-width:96%;max-height:none}
 </style><style>
 .lnav{display:flex;justify-content:space-between;gap:10px;margin:14px 0}
 .lnav a,.lnav span{flex:1;text-align:center;padding:9px 8px;border:1px solid #c8e6c9;border-radius:9px;
@@ -38,11 +39,11 @@ img.pic,img.qpic{cursor:zoom-in}
 .time{font-size:13px}
 .pic,.qpic,.sticker{background:#eef1ec}
 </style></head><body>
-<header><h1>催醒游戏俱乐部 · 第一课</h1><div class="sub">2026-07-10～2026-07-11</div></header>
+<header><h1>催醒游戏俱乐部 第一课</h1><div class="sub">2026-07-10～2026-07-11</div></header>
 <nav class="lnav"><span class="nav-off">← 上一课</span><a class="nav-home" href="index.html">🏠 首页</a><a href="第二课.html">下一课 →</a></nav>
 <div class="msg"><div class="meta"><span class="name">梦***</span><span class="time">2026-07-10 17:33</span></div><div class="body">@元吾氏，元哥是15号回来就开课吗？</div></div><div class="msg aw"><div class="meta"><span class="name">元吾氏</span><span class="time">2026-07-10 17:56</span></div><div class="body">啥？</div></div><div class="msg aw"><div class="meta"><span class="name">元吾氏</span><span class="time">2026-07-10 17:56</span></div><div class="body">不是早就開始了嗎？</div></div><div class="msg aw"><div class="meta"><span class="name">元吾氏</span><span class="time">2026-07-10 17:56</span></div><div class="body">催醒俱樂部，遊戲課程早就開始了呀！<br>—————<br>第一課：<br>什麼是「假意識強度」？<br>時間：6月27日開始〜<br>—————<br>已經持續了14天啊！<br>每天大家不是在實戰參與嗎？<br>熱火朝天的吧？<br>難道你還沒反應過來？😏</div></div><div class="msg aw"><div class="meta"><span class="name">元吾氏</span><span class="time">2026-07-11 13:05</span></div><div class="body">催醒俱樂部，遊戲課程早就開始了！<br>—————<br>第一課：<br>什麼是「假意識強度」？<br>時間：6月27日開始〜<br>—————<br>已經持續了15天！<br>每天大家在實戰參與吧？<br>熱火朝天的吧？<br>你反應過來了嗎？</div></div><div class="msg aw"><div class="meta"><span class="name">元吾氏</span><span class="time">2026-07-11 17:01</span></div><div class="body">7月15日元哥出差回来后继续游戏第二课。<br>在此之前，请大家思考游戏第一课的问题：<br>1）什么是“假意识强度”？<br>2）什么是“意识宽度”？什么是“意识窄度”？<br>3）什么是“意识蠢度”？<br>4）通过这次实战，你学会辨识了吗？<br>5）为什么、游戏第一回合、还没结束，就有人末位淘汰出局了呢？<br>6）这一回合的实战游戏，你学到了什么？<br>7）作为游戏参与者之一，你给自己各方面评分一下？可以使用200多个意识强度检测点，真实地、诚实地评估自己。<br>8）你对什么当真了？<br>9）什么是意识强度最高点？平均波动范围？最低点？哪个和脱离轮回有关？<br>10）什么是造假？人为什么会造假？<br><br>建议认真回答，为你自己，不是为元哥</div></div>
 <div id="lb" onclick="this.style.display='none'"><img loading="lazy" decoding="async" id="lbi"></div>
-<script>function jlTog(b){var r=b.previousElementSibling;if(r.style.display==='none'){r.style.display='';b.textContent='收起 ▴';}else{r.style.display='none';b.textContent='展开剩余 '+b.dataset.n+' 条 ▾';}}
+<script>function jlTog(b){var r=b.previousElementSibling;if(r.style.display==='none'){r.style.display='';b.textContent='收起 ▴';}else{r.style.display='none';b.textContent=b.dataset.more||('展开剩余 '+b.dataset.n+' 条 ▾');}}
 document.addEventListener('click',function(e){if(e.target.tagName==='IMG'&&(e.target.classList.contains('pic')||e.target.classList.contains('qpic'))){document.getElementById('lbi').src=e.target.src;document.getElementById('lb').style.display='block';}});</script>
 <style>
 .hw-sec{margin-top:34px;border-top:2px solid var(--aw);padding-top:18px}
@@ -1189,7 +1190,7 @@ iii，合一某高灵某复合体灵时表现的意识强度
 为了达到自身的一些目的而造假。
 —------------------------
 以上是边合一灵核边回答，最后灵核说：大家要好好复盘，借此提升自己，否则真古零这次白牺牲了。
-深深感受到了灵核的一种伤感，对真古灵的惋惜的情感[叹气]🥺</div><button class="hw-more" onclick="hwTog(this)">展开 ▾</button></div><div class="hw"><div class="hw-n">Fr***om</div><div class="hw-a clamp">1）什么是“假意识强度”？
+深深感受到了灵核的一种伤感，对真古灵的惋惜的情感<img class="emoji" src="assets/L1/001.png">🥺</div><button class="hw-more" onclick="hwTog(this)">展开 ▾</button></div><div class="hw"><div class="hw-n">Fr***om</div><div class="hw-a clamp">1）什么是“假意识强度”？
 
 真：意识观察思考的客观程度，越客观越能看透事物的本质。
 假：意识观察思考的主观度程度，以小我为中心的程序化意识惯性。受程序与程序参数影响变化和波动较大。
