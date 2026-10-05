@@ -12,10 +12,11 @@ header h1{margin:0;font-size:26px;color:var(--aw)}
 header .sub{color:var(--mut);font-size:14px;margin-top:6px}
 .intro{display:flex;gap:24px;margin:22px 2px 6px}
 .intro .col{flex:1;min-width:0}
-.intro .col+.col{padding-left:48px}
+.intro .col:first-child{flex:none;white-space:nowrap}
+.intro .col+.col{padding-left:72px}
 .intro h2{font-size:16px;color:var(--aw);margin:0 0 6px}
 .intro p{margin:0;color:#333;font-size:15px;line-height:1.9}
-@media (max-width:560px){.intro{flex-direction:column;gap:6px}.intro .col+.col{padding-left:0}}
+@media (max-width:560px){.intro{flex-direction:column;gap:6px}.intro .col:first-child{white-space:normal}.intro .col+.col{padding-left:0}}
 ul{list-style:none;padding:0;margin:22px 0}
 li{margin:0}
 li a{display:flex;justify-content:space-between;align-items:baseline;gap:12px;
