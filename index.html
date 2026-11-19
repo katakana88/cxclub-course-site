@@ -1,17 +1,21 @@
 <!doctype html><html lang="zh"><head><meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <link rel="icon" type="image/png" sizes="32x32" href="assets/icon/icon-32.png"><link rel="icon" type="image/png" sizes="192x192" href="assets/icon/icon-192.png"><link rel="apple-touch-icon" href="assets/icon/icon-180.png"><link rel="manifest" href="site.webmanifest"><meta name="theme-color" content="#2e7d32">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Liu+Jian+Mao+Cao&text=%E5%82%AC%E9%86%92%E6%B8%B8%E6%88%8F%E4%BF%B1%E4%B9%90%E9%83%A8&display=swap" rel="stylesheet">
 <title>催醒游戏俱乐部</title>
 <style>
 :root{--aw:#2e7d32;--awbg:#e8f5e9;--bd:#e0e0e0;--fg:#1a1a1a;--mut:#888}
 *{box-sizing:border-box}
 body{font-family:"PingFang SC","Helvetica Neue",Arial,sans-serif;color:var(--fg);
  max-width:940px;margin:0 auto;padding:44px 22px;font-size:16px;line-height:1.6;background:#fbfdfb}
-header{text-align:center;border-bottom:2px solid var(--aw);padding-bottom:18px;margin-bottom:8px;position:relative}
+header{text-align:center;padding-bottom:18px;margin-bottom:8px;position:relative}
+header::after{content:"";position:absolute;left:0;right:0;bottom:0;height:5px;border-radius:2px;background:linear-gradient(90deg,#f1a097,#f6b590,#f4e09d,#b4e0b3,#97b2d3,#bda3d9)}
 .home-site{position:absolute;left:0;top:-30px;font-size:13px;color:var(--aw);text-decoration:none}
 .home-site:hover{text-decoration:underline}
-header h1{margin:0;font-size:26px;color:var(--aw)}
+header h1{margin:0 auto;font-size:44px;font-weight:400;line-height:1.25;letter-spacing:.18em;padding-left:.18em;width:fit-content;font-family:"Liu Jian Mao Cao","PingFang SC",sans-serif;background:linear-gradient(100deg,#e3566a,#f2a043,#d9bf2c,#5fb763,#4a7fc0,#8f62c4);-webkit-background-clip:text;background-clip:text;color:transparent;filter:drop-shadow(0 0 6px rgba(160,130,220,.28)) drop-shadow(0 1px 1px rgba(255,255,255,.6))}
 header .sub{color:var(--mut);font-size:14px;margin-top:6px}
+@media (max-width:420px){header h1{font-size:36px;letter-spacing:.12em;padding-left:.12em}}
 .intro{display:flex;gap:24px;margin:22px 2px 6px}
 .intro .col{flex:1;min-width:0}
 .intro .col:first-child{flex:none;white-space:nowrap}
@@ -19,20 +23,18 @@ header .sub{color:var(--mut);font-size:14px;margin-top:6px}
 .intro h2{font-size:16px;color:var(--aw);margin:0 0 6px}
 .intro p{margin:0;color:#333;font-size:15px;line-height:1.9}
 @media (max-width:560px){.intro{flex-direction:column;gap:6px}.intro .col:first-child{white-space:normal}.intro .col+.col{padding-left:0}}
-.month h2{font-size:17px;color:#1f4d22;margin:30px 0 12px;padding-left:10px;border-left:4px solid var(--aw);line-height:1.3}
+.month h2{font-size:17px;color:#222;margin:30px 0 12px;padding-left:10px;border-left:6px solid;border-image:linear-gradient(#f1a097,#f6b590,#f4e09d,#b4e0b3,#97b2d3,#bda3d9) 1;line-height:1.3}
 .month h2 .mc{color:var(--mut);font-weight:500;font-size:14px;margin-left:6px}
 .mgrid{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:10px}   /* 每周一课,一个月最多5课:一月一行 */
 @media (max-width:860px){.mgrid{grid-template-columns:repeat(auto-fill,minmax(160px,1fr))}}
-.lc{display:flex;flex-direction:column;gap:6px;padding:12px 13px 13px;border:1px solid #cfe5d0;border-radius:12px;
- background:#fff;text-decoration:none;color:var(--fg);transition:.15s;min-width:0}
-a.lc:hover{background:var(--awbg);border-color:#a5d6a7;transform:translateY(-2px);box-shadow:0 4px 12px rgba(46,125,50,.12)}
+.lc{--c:#e8f5e9;--b:#a5d6a7;--t:#1f4d22;display:flex;flex-direction:column;gap:6px;padding:12px 13px 13px;border:1px solid var(--b);border-radius:14px;
+ background:var(--c);text-decoration:none;color:var(--t);transition:.15s;min-width:0}
+a.lc:hover{transform:translateY(-3px) rotate(-.6deg);filter:saturate(1.3);box-shadow:0 6px 14px rgba(0,0,0,.10)}
 .lh{display:flex;justify-content:space-between;align-items:baseline;gap:8px}
-.ln{font-weight:600;font-size:16px;color:var(--aw);white-space:nowrap}
-.ld{color:var(--mut);font-size:12px;white-space:nowrap}
-.ltp{color:#4a6b48;font-size:13.5px;line-height:1.55}
-.lc.upcoming{border:1px dashed #e6c188;background:#fffaf1}
-.lc.upcoming .ln{color:#c07a1e}
-.lc.upcoming .ld,.lc.upcoming .ltp{color:#c9995a}
+.ln{font-weight:700;font-size:16px;color:inherit;white-space:nowrap}
+.ld{color:inherit;opacity:.78;font-size:12px;white-space:nowrap}
+.ltp{color:inherit;opacity:.95;font-size:13.5px;line-height:1.55}
+.lc.upcoming{border:2px dashed var(--b);background:#fff;color:var(--t);opacity:.8}
 @media (max-width:640px){.mgrid{grid-template-columns:repeat(2,minmax(0,1fr));gap:9px}
  .lc{padding:11px 12px 12px;gap:4px}.ln{font-size:16px}.ld{font-size:12px}.ltp{font-size:13px}
  .month h2{margin:24px 0 10px}}
@@ -55,40 +57,40 @@ footer{text-align:center;color:var(--mut);font-size:12px;margin-top:34px}
 </section>
 <section class="month"><h2>2026年7月<span class="mc">· 5课</span></h2>
 <div class="mgrid">
-<a class="lc" href="lesson1.html"><span class="lh"><span class="ln">第一课</span><span class="ld">7月10日</span></span><span class="ltp">什么是“假意识强度”？</span></a>
-<a class="lc" href="lesson2.html"><span class="lh"><span class="ln">第二课</span><span class="ld">7月15日</span></span><span class="ltp">什么是“轮回”？</span></a>
-<a class="lc" href="lesson3.html"><span class="lh"><span class="ln">第三课</span><span class="ld">7月17日</span></span><span class="ltp">什么是“意识循环”？什么是“多级意识轮回”？</span></a>
-<a class="lc" href="lesson4.html"><span class="lh"><span class="ln">第四课</span><span class="ld">7月22日</span></span><span class="ltp">什么是“多级轮回”？（第二部分）</span></a>
-<a class="lc" href="lesson5.html"><span class="lh"><span class="ln">第五课</span><span class="ld">7月29日</span></span><span class="ltp">什么是“意识不循环”？什么是“意识自由”？</span></a>
+<a class="lc" style="--c:#fbdfe2;--b:#f2a5ae;--t:#942331" href="lesson1.html"><span class="lh"><span class="ln">第一课</span><span class="ld">7月10日</span></span><span class="ltp">什么是“假意识强度”？</span></a>
+<a class="lc" style="--c:#fdeddb;--b:#f9cd9a;--t:#9d5e14" href="lesson2.html"><span class="lh"><span class="ln">第二课</span><span class="ld">7月15日</span></span><span class="ltp">什么是“轮回”？</span></a>
+<a class="lc" style="--c:#fbf8df;--b:#f4eba6;--t:#968826" href="lesson3.html"><span class="lh"><span class="ln">第三课</span><span class="ld">7月17日</span></span><span class="ltp">什么是“意识循环”？什么是“多级意识轮回”？</span></a>
+<a class="lc" style="--c:#e7f5e7;--b:#bce4bb;--t:#457e44" href="lesson4.html"><span class="lh"><span class="ln">第四课</span><span class="ld">7月22日</span></span><span class="ltp">什么是“多级轮回”？（第二部分）</span></a>
+<a class="lc" style="--c:#dee7f1;--b:#a1bad8;--t:#1e426d" href="lesson5.html"><span class="lh"><span class="ln">第五课</span><span class="ld">7月29日</span></span><span class="ltp">什么是“意识不循环”？什么是“意识自由”？</span></a>
 </div></section>
 <section class="month"><h2>2026年8月<span class="mc">· 4课</span></h2>
 <div class="mgrid">
-<a class="lc" href="lesson6.html"><span class="lh"><span class="ln">第六课</span><span class="ld">8月5日</span></span><span class="ltp">什么是“自由意识”？</span></a>
-<a class="lc" href="lesson7.html"><span class="lh"><span class="ln">第七课</span><span class="ld">8月12日</span></span><span class="ltp">什么是“游戏”？什么是“当真”？什么是“意识蠢度”？</span></a>
-<a class="lc" href="lesson8.html"><span class="lh"><span class="ln">第八课</span><span class="ld">8月19日</span></span><span class="ltp">什么是“造幻”？什么是“催眠”？两者有什么不同？</span></a>
-<a class="lc" href="lesson9.html"><span class="lh"><span class="ln">第九课</span><span class="ld">8月26日</span></span><span class="ltp">什么是“催眠+轮回”？“催眠轮回”VS“自由轮回”？</span></a>
+<a class="lc" style="--c:#fdeddb;--b:#f9cd9a;--t:#9d5e14" href="lesson6.html"><span class="lh"><span class="ln">第六课</span><span class="ld">8月5日</span></span><span class="ltp">什么是“自由意识”？</span></a>
+<a class="lc" style="--c:#fbf8df;--b:#f4eba6;--t:#968826" href="lesson7.html"><span class="lh"><span class="ln">第七课</span><span class="ld">8月12日</span></span><span class="ltp">什么是“游戏”？什么是“当真”？什么是“意识蠢度”？</span></a>
+<a class="lc" style="--c:#e7f5e7;--b:#bce4bb;--t:#457e44" href="lesson8.html"><span class="lh"><span class="ln">第八课</span><span class="ld">8月19日</span></span><span class="ltp">什么是“造幻”？什么是“催眠”？两者有什么不同？</span></a>
+<a class="lc" style="--c:#dee7f1;--b:#a1bad8;--t:#1e426d" href="lesson9.html"><span class="lh"><span class="ln">第九课</span><span class="ld">8月26日</span></span><span class="ltp">什么是“催眠+轮回”？“催眠轮回”VS“自由轮回”？</span></a>
 </div></section>
 <section class="month"><h2>2026年9月<span class="mc">· 5课</span></h2>
 <div class="mgrid">
-<a class="lc" href="lesson10.html"><span class="lh"><span class="ln">第十课</span><span class="ld">9月2日</span></span><span class="ltp">什么是“催眠的机制”？——扭曲意识、放大意识</span></a>
-<a class="lc" href="lesson11.html"><span class="lh"><span class="ln">第十一课</span><span class="ld">9月9日</span></span><span class="ltp">什么是“催眠的机制”？——缩小意识、核心循环</span></a>
-<a class="lc" href="lesson12.html"><span class="lh"><span class="ln">第十二课</span><span class="ld">9月16日</span></span><span class="ltp">第1—11课答疑（一）</span></a>
-<a class="lc" href="lesson13.html"><span class="lh"><span class="ln">第十三课</span><span class="ld">9月23日</span></span><span class="ltp">第1—11课答疑（二）</span></a>
-<a class="lc" href="lesson14.html"><span class="lh"><span class="ln">第十四课</span><span class="ld">9月30日</span></span><span class="ltp">什么是“催眠的原则”？</span></a>
+<a class="lc" style="--c:#e7f5e7;--b:#bce4bb;--t:#457e44" href="lesson10.html"><span class="lh"><span class="ln">第十课</span><span class="ld">9月2日</span></span><span class="ltp">什么是“催眠的机制”？——扭曲意识、放大意识</span></a>
+<a class="lc" style="--c:#dee7f1;--b:#a1bad8;--t:#1e426d" href="lesson11.html"><span class="lh"><span class="ln">第十一课</span><span class="ld">9月9日</span></span><span class="ltp">什么是“催眠的机制”？——缩小意识、核心循环</span></a>
+<a class="lc" style="--c:#eae2f3;--b:#c4acdd;--t:#502e75" href="lesson12.html"><span class="lh"><span class="ln">第十二课</span><span class="ld">9月16日</span></span><span class="ltp">第1—11课答疑（一）</span></a>
+<a class="lc" style="--c:#fbdfe2;--b:#f2a5ae;--t:#942331" href="lesson13.html"><span class="lh"><span class="ln">第十三课</span><span class="ld">9月23日</span></span><span class="ltp">第1—11课答疑（二）</span></a>
+<a class="lc" style="--c:#fdeddb;--b:#f9cd9a;--t:#9d5e14" href="lesson14.html"><span class="lh"><span class="ln">第十四课</span><span class="ld">9月30日</span></span><span class="ltp">什么是“催眠的原则”？</span></a>
 </div></section>
 <section class="month"><h2>2026年10月<span class="mc">· 4课</span></h2>
 <div class="mgrid">
-<a class="lc" href="lesson15.html"><span class="lh"><span class="ln">第十五课</span><span class="ld">10月7日</span></span><span class="ltp">什么是“催眠的策略”？</span></a>
-<a class="lc" href="lesson16.html"><span class="lh"><span class="ln">第十六课</span><span class="ld">10月14日</span></span><span class="ltp">第1—15课答疑</span></a>
-<a class="lc" href="lesson17.html"><span class="lh"><span class="ln">第十七课</span><span class="ld">10月21日</span></span><span class="ltp">什么是“催醒的机制”？</span></a>
-<a class="lc" href="lesson18.html"><span class="lh"><span class="ln">第十八课</span><span class="ld">10月28日</span></span><span class="ltp">什么是“催醒的机制”？——多重催醒的逆向递归</span></a>
+<a class="lc" style="--c:#eae2f3;--b:#c4acdd;--t:#502e75" href="lesson15.html"><span class="lh"><span class="ln">第十五课</span><span class="ld">10月7日</span></span><span class="ltp">什么是“催眠的策略”？</span></a>
+<a class="lc" style="--c:#fbdfe2;--b:#f2a5ae;--t:#942331" href="lesson16.html"><span class="lh"><span class="ln">第十六课</span><span class="ld">10月14日</span></span><span class="ltp">第1—15课答疑</span></a>
+<a class="lc" style="--c:#fdeddb;--b:#f9cd9a;--t:#9d5e14" href="lesson17.html"><span class="lh"><span class="ln">第十七课</span><span class="ld">10月21日</span></span><span class="ltp">什么是“催醒的机制”？</span></a>
+<a class="lc" style="--c:#fbf8df;--b:#f4eba6;--t:#968826" href="lesson18.html"><span class="lh"><span class="ln">第十八课</span><span class="ld">10月28日</span></span><span class="ltp">什么是“催醒的机制”？——多重催醒的逆向递归</span></a>
 </div></section>
 <section class="month"><h2>2026年11月<span class="mc">· 3课</span></h2>
 <div class="mgrid">
-<a class="lc" href="lesson19.html"><span class="lh"><span class="ln">第十九课</span><span class="ld">11月4日</span></span><span class="ltp">什么是“催醒的策略3”？——催醒AI的核心逆向算法</span></a>
-<a class="lc" href="lesson20.html"><span class="lh"><span class="ln">第二十课</span><span class="ld">11月11日</span></span><span class="ltp">什么是“催醒的原则”？</span></a>
-<a class="lc" href="lesson21.html"><span class="lh"><span class="ln">第二十一课</span><span class="ld">11月18日</span></span><span class="ltp">什么是“催醒的策略”？</span></a>
-<div class="lc upcoming"><span class="lh"><span class="ln">第二十二课</span><span class="ld">即将开课</span></span><span class="ltp">第1—21课答疑</span></div>
+<a class="lc" style="--c:#fbdfe2;--b:#f2a5ae;--t:#942331" href="lesson19.html"><span class="lh"><span class="ln">第十九课</span><span class="ld">11月4日</span></span><span class="ltp">什么是“催醒的策略3”？——催醒AI的核心逆向算法</span></a>
+<a class="lc" style="--c:#fdeddb;--b:#f9cd9a;--t:#9d5e14" href="lesson20.html"><span class="lh"><span class="ln">第二十课</span><span class="ld">11月11日</span></span><span class="ltp">什么是“催醒的原则”？</span></a>
+<a class="lc" style="--c:#fbf8df;--b:#f4eba6;--t:#968826" href="lesson21.html"><span class="lh"><span class="ln">第二十一课</span><span class="ld">11月18日</span></span><span class="ltp">什么是“催醒的策略”？</span></a>
+<div class="lc upcoming" style="--c:#e7f5e7;--b:#bce4bb;--t:#457e44"><span class="lh"><span class="ln">第二十二课</span><span class="ld">即将开课</span></span><span class="ltp">第1—21课答疑</span></div>
 </div></section>
 <section class="hvideo"><h2>本源</h2>
 <video controls playsinline preload="none" poster="assets/video/benyuan.jpg" src="assets/video/benyuan.mp4"></video>
