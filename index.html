@@ -11,8 +11,12 @@ body{font-family:"PingFang SC","Helvetica Neue",Arial,sans-serif;color:var(--fg)
  max-width:940px;margin:0 auto;padding:44px 22px;font-size:16px;line-height:1.6;background:#fbfdfb}
 header{text-align:center;padding-bottom:18px;margin-bottom:8px;position:relative}
 header::after{content:"";position:absolute;left:0;right:0;bottom:0;height:5px;border-radius:2px;background:linear-gradient(90deg,#f1a097,#f6b590,#f4e09d,#b4e0b3,#97b2d3,#bda3d9)}
-.home-site{position:absolute;left:0;top:-30px;font-size:13px;color:var(--aw);text-decoration:none}
-.home-site:hover{text-decoration:underline}
+.ext-links{position:absolute;left:0;right:0;top:-34px;display:flex;justify-content:space-between;align-items:center;gap:12px}   /* 左:元吾氏催醒网 / 右:国际催醒网,左右对称 */
+.ext-links a{display:inline-flex;align-items:center;gap:6px;padding-bottom:3px;border-bottom:1.5px solid currentColor;text-decoration:none;opacity:.85;transition:.15s}
+.ext-links a:hover{opacity:1}
+.ext-links img{height:24px;display:block}
+.ext-links .yw{color:#2a5279}.ext-links .aw{color:#222}.ext-links .aw{font-family:Georgia,"Times New Roman",serif;font-weight:700;font-size:17px;line-height:24px}.ext-links .aw svg{width:22px;height:22px;display:block}
+@media (max-width:760px){.ext-links{position:static;margin:-26px 0 16px}}
 header h1{margin:0 auto;font-size:44px;font-weight:400;line-height:1.25;letter-spacing:.18em;padding-left:.18em;width:fit-content;font-family:"Liu Jian Mao Cao","PingFang SC",sans-serif;background:linear-gradient(100deg,#e3566a,#f2a043,#d9bf2c,#5fb763,#4a7fc0,#8f62c4);-webkit-background-clip:text;background-clip:text;color:transparent;filter:drop-shadow(0 0 6px rgba(160,130,220,.28)) drop-shadow(0 1px 1px rgba(255,255,255,.6))}
 header .sub{color:var(--mut);font-size:14px;margin-top:6px}
 @media (max-width:420px){header h1{font-size:36px;letter-spacing:.12em;padding-left:.12em}}
@@ -48,7 +52,7 @@ footer{text-align:center;color:var(--mut);font-size:12px;margin-top:34px}
  color:#8a6d1a;text-decoration:none;font-size:12px;font-weight:600;line-height:1.5}
 .qa-dl a:hover{background:#fdf0c0}
 </style></head><body>
-<header><a class="home-site" href="https://www.yuanwushi.org/">← 元吾氏催醒网</a><h1>催醒游戏俱乐部</h1><div class="sub">元吾氏催醒游戏学前班课程</div><div class="qa-dl"><a href="qa/all.pdf">📄 下载全部课程PDF版</a></div></header>
+<header><div class="ext-links"><a class="yw" href="https://www.yuanwushi.org/" title="元吾氏催醒网"><img src="assets/links/yuanwushi.png" alt="元吾氏催醒网"></a><a class="aw" href="https://awakenology.org/" title="国际催醒网 Awakenology"><svg viewBox="0 0 100 100" aria-hidden="true" style="transform:rotate(5deg)"><path d="M17 80 A44 44 0 1 1 26.7 87.3" fill="none" stroke="currentColor" stroke-width="7.5"/><path d="M27 87 L50 20 L72 77 L58 59 Q52 54 46 55" fill="none" stroke="currentColor" stroke-width="7.5" stroke-linecap="round" stroke-linejoin="round"/></svg><span>Awakenology</span></a></div><h1>催醒游戏俱乐部</h1><div class="sub">元吾氏催醒游戏学前班课程</div><div class="qa-dl"><a href="qa/all.pdf">📄 下载全部课程PDF版</a></div></header>
 <section class="intro">
 <div class="col"><h2>A）俱樂部宗旨：</h2>
 <p>地球🌍催醒遊戲两步走：<br>第一步：了解催眠+体验催眠。<br>第二步：辨识催眠+消灭催眠。<br>现在是遊戲第二阶段：「辨识催眠+消灭催眠」。</p></div>
