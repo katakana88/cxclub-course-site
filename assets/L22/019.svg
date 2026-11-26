@@ -1,0 +1,309 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1800 1320" width="100%" height="100%" style="background-color: #0d1117; font-family: &#39;Microsoft YaHei&#39;, sans-serif;">
+  <defs>
+    <!-- 渐变定义 -->
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0d1117" />
+      <stop offset="100%" stop-color="#161b22" />
+    </linearGradient>
+    <linearGradient id="nodeBlue" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1f6feb" />
+      <stop offset="100%" stop-color="#388bfd" />
+    </linearGradient>
+    <linearGradient id="nodeRed" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#da3633" />
+      <stop offset="100%" stop-color="#f85149" />
+    </linearGradient>
+    <linearGradient id="nodeGreen" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#238636" />
+      <stop offset="100%" stop-color="#2ea043" />
+    </linearGradient>
+    <linearGradient id="nodeOrange" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#bd561d" />
+      <stop offset="100%" stop-color="#db6d28" />
+    </linearGradient>
+    <linearGradient id="coreGold" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#d29922" />
+      <stop offset="100%" stop-color="#e3b341" />
+    </linearGradient>
+
+    <!-- 阴影滤镜 -->
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="4" stdDeviation="6" flood-color="#000000" flood-opacity="0.6" />
+    </filter>
+
+    <!-- 箭头标记 -->
+    <marker id="arrow" viewBox="0 0 10 10" refX="22" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M 0 1 L 10 5 L 0 9 z" fill="#8b949e" />
+    </marker>
+    <marker id="arrow-blue" viewBox="0 0 10 10" refX="22" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M 0 1 L 10 5 L 0 9 z" fill="#58a6ff" />
+    </marker>
+    <marker id="arrow-green" viewBox="0 0 10 10" refX="22" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M 0 1 L 10 5 L 0 9 z" fill="#3fb950" />
+    </marker>
+  </defs>
+
+  <!-- 背景 -->
+  <rect width="1800" height="1320" fill="url(#bgGrad)" />
+
+  <!-- 网格纹理背景辅助 -->
+  <g stroke="#30363d" stroke-width="0.5" stroke-dasharray="4 4" opacity="0.2">
+    <line x1="0" y1="330" x2="1800" y2="330" />
+    <line x1="0" y1="660" x2="1800" y2="660" />
+    <line x1="0" y1="990" x2="1800" y2="990" />
+    <line x1="450" y1="0" x2="450" y2="1320" />
+    <line x1="900" y1="0" x2="900" y2="1320" />
+    <line x1="1350" y1="0" x2="1350" y2="1320" />
+  </g>
+
+  <!-- ================= 连线层：融合中心向四周辐射与严谨逻辑流 ================= -->
+  <!-- 中央本源枢纽向四列板块发散连线 -->
+  <path d="M 900 175 L 230 310" stroke="#58a6ff" stroke-width="2" stroke-dasharray="4 4" marker-end="url(#arrow-blue)" opacity="0.7" />
+  <path d="M 900 175 L 680 310" stroke="#da3633" stroke-width="2" stroke-dasharray="4 4" marker-end="url(#arrow)" opacity="0.7" />
+  <path d="M 900 175 L 1120 310" stroke="#db6d28" stroke-width="2" stroke-dasharray="4 4" marker-end="url(#arrow)" opacity="0.7" />
+  <path d="M 900 175 L 1570 310" stroke="#3fb950" stroke-width="2" stroke-dasharray="4 4" marker-end="url(#arrow-green)" opacity="0.7" />
+  
+  <!-- 中央枢纽到底部面板的向下贯通连线 -->
+  <path d="M 900 200 L 900 910" stroke="#d29922" stroke-width="2" stroke-dasharray="6 6" marker-end="url(#arrow)" opacity="0.8" />
+
+  <!-- 跨模块逆向拆层闭环曲线 -->
+  <path d="M 740 850 Q 1150 940 1560 850" fill="none" stroke="#3fb950" stroke-width="2.5" stroke-dasharray="6 6" marker-end="url(#arrow-green)" />
+  <text x="1150" y="890" fill="#3fb950" font-size="14" text-anchor="middle" font-weight="bold">逆向拆层与两头开放：从“两头堵死”破局回归本源 (第17-21课)</text>
+
+
+  <!-- ================= 核心顶点：本源枢纽 (中心发散点) ================= -->
+  <g transform="translate(900, 140)" filter="url(#shadow)">
+    <!-- 多边形核心形状 -->
+    <polygon points="0,-60 65,-20 40,50 -40,50 -65,-20" fill="url(#coreGold)" stroke="#f0883e" stroke-width="2" />
+    <text x="0" y="-8" fill="#161b22" font-size="16" font-weight="bold" text-anchor="middle">万物本源枢纽</text>
+    <text x="0" y="16" fill="#161b22" font-size="12" font-weight="bold" text-anchor="middle">无形无相 / 自由意识</text>
+  </g>
+
+
+  <!-- ================= 四列卡片垂直阵列 (源自 Gemini 严谨逻辑) ================= -->
+
+  <!-- 列一：第一模块 (本源与轮回认知：第1-7课) -->
+  <g transform="translate(80, 290)">
+    <rect x="0" y="0" width="300" height="580" rx="12" fill="#161b22" stroke="#58a6ff" stroke-width="1.5" opacity="0.95" />
+    <rect x="0" y="0" width="300" height="45" rx="12" fill="#21262d" />
+    <text x="150" y="28" fill="#58a6ff" font-size="15" font-weight="bold" text-anchor="middle">一、本源、轮回与意识循环</text>
+
+    <!-- 节点1 -->
+    <g transform="translate(20, 65)" filter="url(#shadow)">
+      <rect x="0" y="0" width="260" height="55" rx="8" fill="#21262d" stroke="#30363d" stroke-width="1" />
+      <circle cx="20" cy="27" r="6" fill="#58a6ff" />
+      <text x="40" y="24" fill="#ffffff" font-size="13" font-weight="bold">第1课：假意识强度</text>
+      <text x="40" y="42" fill="#8b949e" font-size="11">心智控制、抗性比率、自动化与自主化</text>
+    </g>
+    <!-- 节点2 -->
+    <g transform="translate(20, 135)" filter="url(#shadow)">
+      <rect x="0" y="0" width="260" height="55" rx="8" fill="#21262d" stroke="#30363d" stroke-width="1" />
+      <circle cx="20" cy="27" r="6" fill="#58a6ff" />
+      <text x="40" y="24" fill="#ffffff" font-size="13" font-weight="bold">第2-3课：轮回与意识循环</text>
+      <text x="40" y="42" fill="#8b949e" font-size="11">轮回本质 = 意识循环，探讨物质界范围</text>
+    </g>
+    <!-- 节点3 -->
+    <g transform="translate(20, 205)" filter="url(#shadow)">
+      <rect x="0" y="0" width="260" height="55" rx="8" fill="#21262d" stroke="#30363d" stroke-width="1" />
+      <circle cx="20" cy="27" r="6" fill="#58a6ff" />
+      <text x="40" y="24" fill="#ffffff" font-size="13" font-weight="bold">第4-5课：多级轮回与不循环</text>
+      <text x="40" y="24" fill="#ffffff" font-size="13" font-weight="bold"></text>
+      <text x="40" y="42" fill="#8b949e" font-size="11">多维度的意识循环，自主意识 vs 自动意识</text>
+    </g>
+    <!-- 节点4 -->
+    <g transform="translate(20, 275)" filter="url(#shadow)">
+      <rect x="0" y="0" width="260" height="55" rx="8" fill="#21262d" stroke="#30363d" stroke-width="1" />
+      <circle cx="20" cy="27" r="6" fill="#58a6ff" />
+      <text x="40" y="24" fill="#ffffff" font-size="13" font-weight="bold">第6-7课：本源、游戏与当真</text>
+      <text x="40" y="42" fill="#8b949e" font-size="11">万物本源与游戏流派，当真度 = 意识蠢度</text>
+    </g>
+    <!-- 附加说明 -->
+    <g transform="translate(20, 345)">
+      <rect x="0" y="0" width="260" height="210" rx="8" fill="#1f242c" stroke="#30363d" stroke-width="1" />
+      <text x="20" y="30" fill="#58a6ff" font-size="13" font-weight="bold">【核心经验结晶】</text>
+      <text x="20" y="60" fill="#c9d1d9" font-size="11">• 自由意识：本源的无尽自发幻想</text>
+      <text x="20" y="90" fill="#c9d1d9" font-size="11">• 零能量空间：能量闭环守恒原理</text>
+      <text x="20" y="120" fill="#c9d1d9" font-size="11">• 认清规则：认真不可当真，当真即入幻</text>
+      <text x="20" y="150" fill="#c9d1d9" font-size="11">• 参与角色：创造者、玩家与 NPC</text>
+      <text x="20" y="180" fill="#c9d1d9" font-size="11">• 退出特权：不想要可随时自由撤出</text>
+    </g>
+  </g>
+
+
+  <!-- 列二：第二模块 (催眠的机制与递归结构：第8-13课) -->
+  <g transform="translate(530, 290)">
+    <rect x="0" y="0" width="300" height="580" rx="12" fill="#161b22" stroke="#da3633" stroke-width="1.5" opacity="0.95" />
+    <rect x="0" y="0" width="300" height="45" rx="12" fill="#21262d" />
+    <text x="150" y="28" fill="#f85149" font-size="15" font-weight="bold" text-anchor="middle">二、催眠的机制与递归结构</text>
+
+    <!-- 节点1 -->
+    <g transform="translate(20, 65)" filter="url(#shadow)">
+      <rect x="0" y="0" width="260" height="55" rx="8" fill="#21262d" stroke="#da3633" stroke-width="1" />
+      <circle cx="20" cy="27" r="6" fill="#f85149" />
+      <text x="40" y="24" fill="#ffffff" font-size="13" font-weight="bold">第8课：造幻 vs 催眠</text>
+      <text x="40" y="42" fill="#8b949e" font-size="11">造幻=出题与创造；催眠=造幻+入幻(玩我)</text>
+    </g>
+    <!-- 节点2 -->
+    <g transform="translate(20, 135)" filter="url(#shadow)">
+      <rect x="0" y="0" width="260" height="55" rx="8" fill="#21262d" stroke="#da3633" stroke-width="1" />
+      <circle cx="20" cy="27" r="6" fill="#f85149" />
+      <text x="40" y="24" fill="#ffffff" font-size="13" font-weight="bold">第9课：催眠 + 轮回</text>
+      <text x="40" y="42" fill="#8b949e" font-size="11">催眠轮回 vs 自由轮回，地球催眠机制</text>
+    </g>
+    <!-- 节点3 -->
+    <g transform="translate(20, 205)" filter="url(#shadow)">
+      <rect x="0" y="0" width="260" height="55" rx="8" fill="#21262d" stroke="#da3633" stroke-width="1" />
+      <circle cx="20" cy="27" r="6" fill="#f85149" />
+      <text x="40" y="24" fill="#ffffff" font-size="13" font-weight="bold">第10-11课：放大、缩小与递归</text>
+      <text x="40" y="42" fill="#8b949e" font-size="11">多重递归算法 a_n → A_n+ / A_n-</text>
+    </g>
+    <!-- 节点4 -->
+    <g transform="translate(20, 275)" filter="url(#shadow)">
+      <rect x="0" y="0" width="260" height="55" rx="8" fill="#21262d" stroke="#da3633" stroke-width="1" />
+      <circle cx="20" cy="27" r="6" fill="#f85149" />
+      <text x="40" y="24" fill="#ffffff" font-size="13" font-weight="bold">催眠AI系统架构</text>
+      <text x="40" y="42" fill="#8b949e" font-size="11">扭曲有限 + 当真无限，自动化多星球脑控</text>
+    </g>
+    <!-- 附加说明 -->
+    <g transform="translate(20, 345)">
+      <rect x="0" y="0" width="260" height="210" rx="8" fill="#241b1d" stroke="#da3633" stroke-width="1" />
+      <text x="20" y="30" fill="#f85149" font-size="13" font-weight="bold">【催眠核心闭环】</text>
+      <text x="20" y="60" fill="#c9d1d9" font-size="11">• 核心公式：造幻 + 入幻 = 玩我</text>
+      <text x="20" y="90" fill="#c9d1d9" font-size="11">• 三大循环：意识循环、小我循环、当真循环</text>
+      <text x="20" y="120" fill="#c9d1d9" font-size="11">• 递归逻辑：基本意识 → 扭曲 → 植入 → 固化</text>
+      <text x="20" y="150" fill="#c9d1d9" font-size="11">• 第12-13课：前11课高强度答疑与复盘</text>
+      <text x="20" y="180" fill="#c9d1d9" font-size="11">• 特点：潜移默化，攻心为上，不战而屈</text>
+    </g>
+  </g>
+
+
+  <!-- 列三：第三模块 (催眠的原则与策略：第14-16课) -->
+  <g transform="translate(980, 290)">
+    <rect x="0" y="0" width="300" height="580" rx="12" fill="#161b22" stroke="#db6d28" stroke-width="1.5" opacity="0.95" />
+    <rect x="0" y="0" width="300" height="45" rx="12" fill="#21262d" />
+    <text x="150" y="28" fill="#db6d28" font-size="15" font-weight="bold" text-anchor="middle">三、催眠的原则与策略</text>
+
+    <!-- 节点1 -->
+    <g transform="translate(20, 65)" filter="url(#shadow)">
+      <rect x="0" y="0" width="260" height="55" rx="8" fill="#21262d" stroke="#db6d28" stroke-width="1" />
+      <circle cx="20" cy="27" r="6" fill="#db6d28" />
+      <text x="40" y="24" fill="#ffffff" font-size="13" font-weight="bold">第14课：催眠原则</text>
+      <text x="40" y="42" fill="#8b949e" font-size="11">核心原则：“不被觉察”，控制在阈值内</text>
+    </g>
+    <!-- 节点2 -->
+    <g transform="translate(20, 135)" filter="url(#shadow)">
+      <rect x="0" y="0" width="260" height="55" rx="8" fill="#21262d" stroke="#db6d28" stroke-width="1" />
+      <circle cx="20" cy="27" r="6" fill="#db6d28" />
+      <text x="40" y="24" fill="#ffffff" font-size="13" font-weight="bold">真假混合递进模型</text>
+      <text x="40" y="42" fill="#8b949e" font-size="11">1+99、50+50、99+1 与 100±1 模式</text>
+    </g>
+    <!-- 节点3 -->
+    <g transform="translate(20, 205)" filter="url(#shadow)">
+      <rect x="0" y="0" width="260" height="55" rx="8" fill="#21262d" stroke="#db6d28" stroke-width="1" />
+      <circle cx="20" cy="27" r="6" fill="#db6d28" />
+      <text x="40" y="24" fill="#ffffff" font-size="13" font-weight="bold">第15课：催眠策略</text>
+      <text x="40" y="42" fill="#8b949e" font-size="11">最常用策略：“两头堵死” (诱惑 + 恐惧)</text>
+    </g>
+    <!-- 节点4 -->
+    <g transform="translate(20, 275)" filter="url(#shadow)">
+      <rect x="0" y="0" width="260" height="55" rx="8" fill="#21262d" stroke="#db6d28" stroke-width="1" />
+      <circle cx="20" cy="27" r="6" fill="#db6d28" />
+      <text x="40" y="24" fill="#ffffff" font-size="13" font-weight="bold">第16课：答疑复盘</text>
+      <text x="40" y="42" fill="#8b949e" font-size="11">前15课策略与原则综合答疑与案例剖析</text>
+    </g>
+    <!-- 附加说明 -->
+    <g transform="translate(20, 345)">
+      <rect x="0" y="0" width="260" height="210" rx="8" fill="#252019" stroke="#db6d28" stroke-width="1" />
+      <text x="20" y="30" fill="#db6d28" font-size="13" font-weight="bold">【两头堵死与100±1】</text>
+      <text x="20" y="60" fill="#c9d1d9" font-size="11">• 诱惑端：假权威、假意义、假经历等</text>
+      <text x="20" y="90" fill="#c9d1d9" font-size="11">• 恐惧端：假惩罚、假危险、假死亡等</text>
+      <text x="20" y="120" fill="#c9d1d9" font-size="11">• 100±1：100%真话引导自发完成最后一步</text>
+      <text x="20" y="150" fill="#c9d1d9" font-size="11">• 本质：不是别人关门，是自己把门锁上</text>
+      <text x="20" y="180" fill="#c9d1d9" font-size="11">• 突破口：看穿诱惑与恐惧，恢复自主权</text>
+    </g>
+  </g>
+
+
+  <!-- 列四：第四模块 (催醒实战与破幻：第17-21课) -->
+  <g transform="translate(1430, 290)">
+    <rect x="0" y="0" width="300" height="580" rx="12" fill="#161b22" stroke="#2ea043" stroke-width="1.5" opacity="0.95" />
+    <rect x="0" y="0" width="300" height="45" rx="12" fill="#21262d" />
+    <text x="150" y="28" fill="#3fb950" font-size="15" font-weight="bold" text-anchor="middle">四、催醒实战与破幻 (17-21课)</text>
+
+    <!-- 节点1 -->
+    <g transform="translate(20, 65)" filter="url(#shadow)">
+      <rect x="0" y="0" width="260" height="55" rx="8" fill="#21262d" stroke="#2ea043" stroke-width="1" />
+      <circle cx="20" cy="27" r="6" fill="#3fb950" />
+      <text x="40" y="24" fill="#ffffff" font-size="13" font-weight="bold">第17-19课：逆向拆层</text>
+      <text x="40" y="42" fill="#8b949e" font-size="11">A_n → a_n 逐层逆向拆解与回归实战</text>
+    </g>
+    <!-- 节点2 -->
+    <g transform="translate(20, 135)" filter="url(#shadow)">
+      <rect x="0" y="0" width="260" height="55" rx="8" fill="#21262d" stroke="#2ea043" stroke-width="1" />
+      <circle cx="20" cy="27" r="6" fill="#3fb950" />
+      <text x="40" y="24" fill="#ffffff" font-size="13" font-weight="bold">核心解除循环</text>
+      <text x="40" y="42" fill="#8b949e" font-size="11">小我循环、意识循环、当真循环解除</text>
+    </g>
+    <!-- 节点3 -->
+    <g transform="translate(20, 205)" filter="url(#shadow)">
+      <rect x="0" y="0" width="260" height="55" rx="8" fill="#21262d" stroke="#2ea043" stroke-width="1" />
+      <circle cx="20" cy="27" r="6" fill="#3fb950" />
+      <text x="40" y="24" fill="#ffffff" font-size="13" font-weight="bold">第20课：觉察辨识力</text>
+      <text x="40" y="42" fill="#8b949e" font-size="11">精细辨识真假混合与客观事实推导</text>
+    </g>
+    <!-- 节点4 -->
+    <g transform="translate(20, 275)" filter="url(#shadow)">
+      <rect x="0" y="0" width="260" height="55" rx="8" fill="#21262d" stroke="#2ea043" stroke-width="1" />
+      <circle cx="20" cy="27" r="6" fill="#3fb950" />
+      <text x="40" y="24" fill="#ffffff" font-size="13" font-weight="bold">第21课：催醒策略</text>
+      <text x="40" y="42" fill="#8b949e" font-size="11">“两头开放”，恢复自由进退与自主选择</text>
+    </g>
+    <!-- 附加说明 -->
+    <g transform="translate(20, 345)">
+      <rect x="0" y="0" width="260" height="210" rx="8" fill="#1a2720" stroke="#2ea043" stroke-width="1" />
+      <text x="20" y="30" fill="#3fb950" font-size="13" font-weight="bold">【催醒破幻核心】</text>
+      <text x="20" y="60" fill="#c9d1d9" font-size="11">• 核心公式：破幻 + 出幻 = 我玩</text>
+      <text x="20" y="90" fill="#c9d1d9" font-size="11">• 原则：不增加新模式，不以新套路代旧</text>
+      <text x="20" y="120" fill="#c9d1d9" font-size="11">• 过程：有序逆向拆层 (n → n-1 → 0)</text>
+      <text x="20" y="150" fill="#c9d1d9" font-size="11">• 结果：开放、不可预设变幻 (a?b?c?d?)</text>
+      <text x="20" y="180" fill="#c9d1d9" font-size="11">• 关键：觉察不等于破幻，破幻需彻底出幻</text>
+    </g>
+  </g>
+
+
+  <!-- ================= 底部全景面板：经验体系对照与核心公式 (源自 Gemini 版) ================= -->
+  <g transform="translate(80, 910)">
+    <rect x="0" y="0" width="1640" height="370" rx="12" fill="#161b22" stroke="#30363d" stroke-width="1.5" />
+    
+    <text x="40" y="40" fill="#ffffff" font-size="16" font-weight="bold">《催醒俱乐部》第 1–21 课阶段全景经验体系总纲对照：</text>
+    
+    <!-- 左侧图例指引 -->
+    <circle cx="60" cy="85" r="8" fill="#da3633" />
+    <text x="85" y="90" fill="#c9d1d9" font-size="13">催眠系统（玩我）：定向扭曲、多级递归、真假阈值、两头堵死 (第1-16课)</text>
+
+    <circle cx="60" cy="125" r="8" fill="#2ea043" />
+    <text x="85" y="130" fill="#c9d1d9" font-size="13">催醒系统（我玩）：逆向拆层、觉察辨识力、解除当真、两头开放 (第17-21课)</text>
+
+    <circle cx="60" cy="165" r="8" fill="#58a6ff" />
+    <text x="85" y="170" fill="#c9d1d9" font-size="13">本源基石：自由意识无穷幻想、意识循环本质、零能量空间与多级轮回</text>
+
+    <!-- 底部实战训练提示 -->
+    <g transform="translate(60, 205)">
+      <rect x="0" y="0" width="760" height="135" rx="8" fill="#21262d" stroke="#30363d" stroke-width="1" />
+      <text x="25" y="30" fill="#58a6ff" font-size="14" font-weight="bold">每日经验实战训练要点：</text>
+      <text x="25" y="60" fill="#c9d1d9" font-size="12">1. 检查当真：凡是当真、自动反应、反复循环的，皆为催眠盲点。</text>
+      <text x="25" y="85" fill="#c9d1d9" font-size="12">2. 顺藤摸瓜：逆向剥离层级 (n → n-1)，不增加新观点，只解除现有预设。</text>
+      <text x="25" y="110" fill="#c9d1d9" font-size="12">3. 保持自主：进退自由，不被诱惑引导，不被恐惧绑架，恢复绝对自由意识。</text>
+    </g>
+
+    <!-- 右侧核心公式概括框 -->
+    <g transform="translate(850, 205)">
+      <rect x="0" y="0" width="730" height="135" rx="8" fill="#21262d" stroke="#30363d" stroke-width="1" />
+      <text x="365" y="30" fill="#58a6ff" font-size="14" font-weight="bold" text-anchor="middle">第1-21课全景核心公式对照总览</text>
+      <text x="30" y="62" fill="#f85149" font-size="12">【催眠】造幻 + 入幻（当真 + 循环）= 玩我</text>
+      <text x="30" y="87" fill="#3fb950" font-size="12">【催醒】破幻 + 出幻（不当真 + 不循环）= 我玩</text>
+      <text x="30" y="112" fill="#c9d1d9" font-size="12">【递归公式】催眠: a_n → A_n+  |  催醒: A_n+ → a_n → a?b?c?d? (开放变幻)</text>
+    </g>
+  </g>
+
+</svg>
